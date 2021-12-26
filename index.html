@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#">
+  <title>Image Slider</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .imgCointainer {
+      width: 59%;
+      margin: 100px auto;
+      border: 5px solid black;
+      /* overflow: hidden; */
+    }
+
+    .imgSlider{
+      display: flex;
+      width: 100%;
+      height: 300px;
+    }
+
+    #nxtBtn{
+      cursor: pointer;
+    }
+
+    #preBtn{
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div style="width: 100%; height: 100vh;">
+    <div class="imgCointainer">
+      <div class="imgSlider">
+        <img src="./assets/imgCal04.jpg" id="firstone" alt="slider image" />
+        <img src="./assets/imgCal01.jpg" alt="slider image" />
+        <img src="./assets/imgCal02.jpg" alt="slider image" />
+        <img src="./assets/imgCal03.jpg" alt="slider image" />
+        <img src="./assets/imgCal04.jpg" alt="slider image" />
+        <img src="./assets/imgCal01.jpg" id="lastone" alt="slider image" />
+      </div>
+    </div>
+    <div id="preBtn">
+      Previous
+    </div>
+    <div id="nxtBtn">
+      Next
+    </div>
+  </div>
+  <script src=" app.js"></script>
+</body>
+
+</html>
